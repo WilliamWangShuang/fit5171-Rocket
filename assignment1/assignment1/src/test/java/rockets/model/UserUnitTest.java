@@ -22,7 +22,7 @@ public class UserUnitTest {
     @Test
     public void equalEmailMeansSameUser() {
         User p1 = new User("abc@example.com");
-
+        //acdsgfdd
         assertEquals("same user", p, p1);
     }
 
