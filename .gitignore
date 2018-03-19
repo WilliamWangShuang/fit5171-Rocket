@@ -29,3 +29,6 @@ Databases
 hs_err_pid*
 
 *.properties
+*.docx
+
+assignment1/assignment1/\.idea/
