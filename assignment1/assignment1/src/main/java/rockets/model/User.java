@@ -21,6 +21,9 @@ public class User extends Entity {
     public User(String email) {
         notNull(email);
 
+        if(!email.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*+@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")){
+            throw new IllegalArgumentException("Email format is wrong. Must contain at least 1 '@' and end with '.' following by domain");
+        }
         this.email = email;
     }
 
@@ -38,11 +41,22 @@ public class User extends Entity {
 
     public String getPassword() { return password; }
 
-    public void setFirstName(String firstName) {
+    public void setFirstName(String firstName) throws IllegalArgumentException {
+        notNull(firstName);
+
+        if ("" == firstName.trim() || "".equals(firstName.trim())){
+            throw new IllegalArgumentException("First name cannot be empty");
+        }
         this.firstName = firstName;
     }
 
     public void setLastName(String lastName) {
+        notNull(lastName);
+
+        if ("" == lastName.trim() || "".equals(lastName.trim())){
+            throw new IllegalArgumentException("Last name cannot be empty");
+        }
+
         this.lastName = lastName;
     }
 
@@ -73,6 +87,7 @@ public class User extends Entity {
 
     @Override
     public int hashCode() {
+        // return hashcode
         return Objects.hash(email);
     }
 

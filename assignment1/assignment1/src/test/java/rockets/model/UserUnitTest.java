@@ -34,6 +34,31 @@ public class UserUnitTest {
     }
 
     @Test
+    public void emailFormatValid(){
+        try{
+            User p1 = new User("email1@123cn");
+            fail("Email format is invalid. Must contain at least 1 '@' and end with '.' following by domain.");
+        } catch (Exception e){
+            assertTrue("Throws IAE", e instanceof IllegalArgumentException);
+            assertTrue("Email format is invalid.", e.getMessage().contains("wrong"));
+        }
+    }
+
+    @Test
+    public void differentEmailhasDiffHashCode(){
+        User u1 = new User("email1@163.com");
+        User u2 = new User("email2@163.com");
+
+        assertNotEquals(u1.hashCode(), u2.hashCode());
+    }
+
+    @Test
+    public void sameEmailHasSameHashcode(){
+        User p1 = new User("abc@example.com");
+        assertEquals("Same user, same hashcode", p.hashCode(), p1.hashCode());
+    }
+
+    @Test
     public void passwordNotNullOrEmpty() {
         try {
             p.setPassword(null);
@@ -50,14 +75,6 @@ public class UserUnitTest {
             assertTrue("Throws IAE", e instanceof IllegalArgumentException);
             assertTrue("Message contains empty", e.getMessage().contains("empty"));
         }
-    }
-
-    @Test
-    public void passwordSucessSet(){
-        String newPassword = "password";
-        p.setPassword(newPassword);
-
-        assertEquals("password", p.getPassword());
     }
 
     @Test
@@ -118,6 +135,42 @@ public class UserUnitTest {
         } catch (Exception e) {
             assertTrue("Throws IAE", e instanceof IllegalArgumentException);
             assertTrue("Password less than 8 digits.", e.getMessage().contains("strong enough"));
+        }
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testNullFNameNotAllowed(){
+        p.setFirstName(null);
+    }
+
+    @Test
+    public void testEmptyFNameNotAllowed(){
+        String firstName = "";
+
+        try {
+            p.setFirstName(firstName);
+            fail("First name is empty.");
+        } catch(Exception e) {
+            assertTrue("Throws IAE", e instanceof IllegalArgumentException);
+            assertTrue("First name is empty.", e.getMessage().contains("empty"));
+        }
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testNullLNameNotAllowed(){
+        p.setLastName(null);
+    }
+
+    @Test
+    public void testEmptyLNameNotAllowed(){
+        String lastName = "";
+
+        try {
+            p.setLastName(lastName);
+            fail("Last name is empty.");
+        } catch(Exception e) {
+            assertTrue("Throws IAE", e instanceof IllegalArgumentException);
+            assertTrue("Last name is empty.", e.getMessage().contains("empty"));
         }
     }
 }
