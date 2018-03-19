@@ -173,4 +173,60 @@ public class UserUnitTest {
             assertTrue("Last name is empty.", e.getMessage().contains("empty"));
         }
     }
+
+    @Test
+    public void testSameUserSameToString(){
+        User u1 = new User("email1@163.com");
+        User u2 = new User("email1@163.com");
+
+        // Initial names
+        u1.setFirstName("Tom");
+        u1.setLastName("Hanks");
+        u2.setFirstName("Tom");
+        u2.setLastName("Hanks");
+
+        assertEquals("Same user, same toString result", u1.toString(), u2.toString());
+    }
+
+    @Test
+    public void diffLNameDiffToString(){
+        User u1 = new User("email1@163.com");
+        User u2 = new User("email1@163.com");
+
+        // Initial names
+        u1.setFirstName("Tom");
+        u1.setLastName("Hanks");
+        u2.setFirstName("Tom");
+        u2.setLastName("Grimm");
+
+        assertNotEquals("Different last name, different toString result", u1.toString(), u2.toString());
+    }
+
+    @Test
+    public void diffFNameDiffToString(){
+        User u1 = new User("email1@163.com");
+        User u2 = new User("email1@163.com");
+
+        // Initial names
+        u1.setFirstName("Tom");
+        u1.setLastName("Hanks");
+        u2.setFirstName("Geo");
+        u2.setLastName("Hanks");
+
+        assertNotEquals("Different first name, different toString result", u1.toString(), u2.toString());
+    }
+
+    @Test
+    public void diffFullNameDiffToString(){
+        User u1 = new User("email1@163.com");
+        User u2 = new User("email1@163.com");
+
+        // Initial names
+        u1.setFirstName("Jenny");
+        u1.setLastName("Hanks");
+        u2.setFirstName("Kari");
+        u2.setLastName("Sylvanas");
+
+        assertNotEquals("Different full name, different toString result", u1.toString(), u2.toString());
+    }
 }

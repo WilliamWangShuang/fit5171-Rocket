@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="method#User#0;class#User#0" expanded="false" />
                 <element signature="method#setFirstName#0;class#User#0" expanded="false" />
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserUnitTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserUnitTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+            <state relative-caret-position="245">
+              <caret line="219" column="42" lean-forward="false" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
               <folding>
                 <element signature="method#equalEmailMeansSameUser#0;class#UserUnitTest#0" expanded="false" />
                 <element signature="method#differentEmailsMeansDifferentUser#0;class#UserUnitTest#0" expanded="false" />
@@ -46,6 +46,10 @@
                 <element signature="method#testWeakPassword#0;class#UserUnitTest#0" expanded="false" />
                 <element signature="method#testEmptyFNameNotAllowed#0;class#UserUnitTest#0" expanded="false" />
                 <element signature="method#testEmptyLNameNotAllowed#0;class#UserUnitTest#0" expanded="false" />
+                <element signature="method#testSameUserSameToString#0;class#UserUnitTest#0" expanded="false" />
+                <element signature="method#diffLNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+                <element signature="method#diffFNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+                <element signature="method#diffFullNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,8 +65,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/model/User.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java" />
       </list>
     </option>
   </component>
@@ -451,14 +455,14 @@
     <history-entry file="UserUnitTest - 2018.03.19 at 20h 29m 54s.xml">
       <configuration name="UserUnitTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserUnitTest - 2018.03.19 at 20h 41m 54s.xml">
+      <configuration name="UserUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserUnitTest - 2018.03.19 at 20h 46m 12s.xml">
+      <configuration name="UserUnitTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="UserUnitTest_differentEmailhasDiffHashCode - 2018.03.19 at 20h 18m 55s.xml">
       <configuration name="UserUnitTest.differentEmailhasDiffHashCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserUnitTest_equalEmailMeansSameUser - 2018.03.19 at 20h 17m 44s.xml">
-      <configuration name="UserUnitTest.equalEmailMeansSameUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserUnitTest_testNullEmailNotAllowed - 2018.03.19 at 20h 17m 38s.xml">
-      <configuration name="UserUnitTest.testNullEmailNotAllowed" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserUnitTest_testNullEmailNotAllowed - 2018.03.19 at 20h 18m 21s.xml">
       <configuration name="UserUnitTest.testNullEmailNotAllowed" configurationId="JUnit" />
@@ -475,6 +479,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
@@ -489,7 +494,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34150326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -549,15 +554,11 @@
             <element signature="method#testWeakPassword#0;class#UserUnitTest#0" expanded="false" />
             <element signature="method#testEmptyFNameNotAllowed#0;class#UserUnitTest#0" expanded="false" />
             <element signature="method#testEmptyLNameNotAllowed#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#testSameUserSameToString#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#diffLNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#diffFNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#diffFullNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,22 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-          <folding>
-            <element signature="method#User#0;class#User#0" expanded="false" />
-            <element signature="method#setFirstName#0;class#User#0" expanded="false" />
-            <element signature="method#setLastName#0;class#User#0" expanded="false" />
-            <element signature="method#setPassword#0;class#User#0" expanded="false" />
-            <element signature="method#equals#0;class#User#0" expanded="false" />
-            <element signature="method#hashCode#0;class#User#0" expanded="false" />
-            <element signature="method#toString#0;class#User#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -667,10 +652,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+        <state relative-caret-position="245">
+          <caret line="219" column="42" lean-forward="false" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
           <folding>
             <element signature="method#equalEmailMeansSameUser#0;class#UserUnitTest#0" expanded="false" />
             <element signature="method#differentEmailsMeansDifferentUser#0;class#UserUnitTest#0" expanded="false" />
@@ -682,6 +675,26 @@
             <element signature="method#testWeakPassword#0;class#UserUnitTest#0" expanded="false" />
             <element signature="method#testEmptyFNameNotAllowed#0;class#UserUnitTest#0" expanded="false" />
             <element signature="method#testEmptyLNameNotAllowed#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#testSameUserSameToString#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#diffLNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#diffFNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+            <element signature="method#diffFullNameDiffToString#0;class#UserUnitTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="method#User#0;class#User#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#User#0" expanded="false" />
+            <element signature="method#setLastName#0;class#User#0" expanded="false" />
+            <element signature="method#setPassword#0;class#User#0" expanded="false" />
+            <element signature="method#equals#0;class#User#0" expanded="false" />
+            <element signature="method#hashCode#0;class#User#0" expanded="false" />
+            <element signature="method#toString#0;class#User#0" expanded="false" />
           </folding>
         </state>
       </provider>
